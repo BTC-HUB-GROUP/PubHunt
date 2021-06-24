@@ -1,4 +1,4 @@
-# KeyHunt-Cuda 
+# PubHunt
 _Hunt for Bitcoin public keys._
 
 ## It searches for random compressed public keys for given hash160.
