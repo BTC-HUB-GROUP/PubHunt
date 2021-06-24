@@ -33,18 +33,18 @@ PubHunt [-check] [-h] [-v]
 
 For example:
 ```
-PubHunt.exe -gi 0 -gx 4096,1024 hashP64.txt
+PubHunt.exe -gi 0 -gx 8192,1024 hashP64.txt
 
 PubHunt v1.00
 
 DEVICE       : GPU
 GPU IDS      : 0
-GPU GRIDSIZE : 4096x1024
+GPU GRIDSIZE : 8192x1024
 NUM HASH160  : 1
 OUTPUT FILE  : Found.txt
-GPU          : GPU #0 GeForce GTX 1650 (14x64 cores) Grid(4096x1024)
+GPU          : GPU #0 GeForce GTX 1650 (14x64 cores) Grid(8192x1024)
 
-[00:02:12] [GPU: 506.74 MH/s] [T: 63,426,265,088 (36 bit)] [F: 0]
+[00:01:43] [GPU: 533.23 MH/s] [T: 54,475,620,352 (36 bit)] [F: 0]
 ```
 
 ## Building

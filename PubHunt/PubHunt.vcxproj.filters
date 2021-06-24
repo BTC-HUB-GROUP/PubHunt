@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="HASH">
-      <UniqueIdentifier>{b615528a-48ae-46f0-b7ed-2351f2ffe7b6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GPU">
       <UniqueIdentifier>{9a5dc419-1816-4414-bea5-408d2950e00c}</UniqueIdentifier>
     </Filter>
@@ -15,18 +12,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HASH\ripemd160.cpp">
-      <Filter>HASH</Filter>
-    </ClCompile>
-    <ClCompile Include="HASH\ripemd160_sse.cpp">
-      <Filter>HASH</Filter>
-    </ClCompile>
-    <ClCompile Include="HASH\sha256.cpp">
-      <Filter>HASH</Filter>
-    </ClCompile>
-    <ClCompile Include="HASH\sha256_sse.cpp">
-      <Filter>HASH</Filter>
-    </ClCompile>
     <ClCompile Include="Int.cpp">
       <Filter>INT</Filter>
     </ClCompile>
@@ -51,12 +36,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HASH\ripemd160.h">
-      <Filter>HASH</Filter>
-    </ClInclude>
-    <ClInclude Include="HASH\sha256.h">
-      <Filter>HASH</Filter>
-    </ClInclude>
     <ClInclude Include="Int.h">
       <Filter>INT</Filter>
     </ClInclude>

@@ -11,10 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HASH\ripemd160.cpp" />
-    <ClCompile Include="HASH\ripemd160_sse.cpp" />
-    <ClCompile Include="HASH\sha256.cpp" />
-    <ClCompile Include="HASH\sha256_sse.cpp" />
     <ClCompile Include="Int.cpp" />
     <ClCompile Include="IntGroup.cpp" />
     <ClCompile Include="IntMod.cpp" />
@@ -29,8 +25,6 @@
     <ClInclude Include="GPU\GPUEngine.h" />
     <ClInclude Include="GPU\GPUHash.h" />
     <ClInclude Include="GPU\GPUMath.h" />
-    <ClInclude Include="HASH\ripemd160.h" />
-    <ClInclude Include="HASH\sha256.h" />
     <ClInclude Include="Int.h" />
     <ClInclude Include="IntGroup.h" />
     <ClInclude Include="PubHunt.h" />
