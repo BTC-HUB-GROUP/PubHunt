@@ -157,7 +157,7 @@ void PubHunt::FindKeyGPU(TH_PARAM * ph)
 
 	vector<ITEM> found;
 
-	printf("GPU          : %s\n\n", g->deviceName.c_str());
+	printf("GPU          : %s\n", g->deviceName.c_str());
 
 	counters[thId] = 0;
 
@@ -288,6 +288,7 @@ void PubHunt::Search(std::vector<int> gpuId, std::vector<int> gridSize, bool& sh
 	while (!hasStarted(params)) {
 		Timer::SleepMillis(500);
 	}
+	printf("\n");
 
 	// Reset timer
 	Timer::Init();

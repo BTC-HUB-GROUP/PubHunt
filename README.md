@@ -27,7 +27,7 @@ PubHunt [-check] [-h] [-v]
  -gx g1x,g1y,g2x,g2y, ... : Specify GPU(s) kernel gridsize, default is 8*(MP number),128
  -o outputfile            : Output results to the specified file
  -l                       : List cuda enabled devices
- -check                   : Check CPU and GPU kernel vs CPU
+ -check                   : Check Int calculations
  inputFile                : List of the hash160, one per line in hex format (text mode)
 ```
 

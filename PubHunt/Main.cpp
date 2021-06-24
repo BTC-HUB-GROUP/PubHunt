@@ -35,7 +35,7 @@ void printUsage() {
 	printf(" -gx g1x,g1y,g2x,g2y, ... : Specify GPU(s) kernel gridsize, default is 8*(MP number),128\n");
 	printf(" -o outputfile            : Output results to the specified file\n");
 	printf(" -l                       : List cuda enabled devices\n");
-	printf(" -check                   : Check CPU and GPU kernel vs CPU\n");
+	printf(" -check                   : Check Int calculations\n");
 	printf(" inputFile                : List of the hash160, one per line in hex format (text mode)\n\n");
 	exit(0);
 
