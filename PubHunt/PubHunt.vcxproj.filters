@@ -10,7 +10,7 @@
     <Filter Include="PUBHUNT">
       <UniqueIdentifier>{751928a7-b154-49cf-ac07-5f9bf260e674}</UniqueIdentifier>
     </Filter>
-    <Filter Include="INT-POINT">
+    <Filter Include="INT">
       <UniqueIdentifier>{d2e07884-b0ff-4d54-9109-3f0257376cf0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -28,16 +28,13 @@
       <Filter>HASH</Filter>
     </ClCompile>
     <ClCompile Include="Int.cpp">
-      <Filter>INT-POINT</Filter>
+      <Filter>INT</Filter>
     </ClCompile>
     <ClCompile Include="IntGroup.cpp">
-      <Filter>INT-POINT</Filter>
+      <Filter>INT</Filter>
     </ClCompile>
     <ClCompile Include="IntMod.cpp">
-      <Filter>INT-POINT</Filter>
-    </ClCompile>
-    <ClCompile Include="Point.cpp">
-      <Filter>INT-POINT</Filter>
+      <Filter>INT</Filter>
     </ClCompile>
     <ClCompile Include="PubHunt.cpp">
       <Filter>PUBHUNT</Filter>
@@ -61,13 +58,10 @@
       <Filter>HASH</Filter>
     </ClInclude>
     <ClInclude Include="Int.h">
-      <Filter>INT-POINT</Filter>
+      <Filter>INT</Filter>
     </ClInclude>
     <ClInclude Include="IntGroup.h">
-      <Filter>INT-POINT</Filter>
-    </ClInclude>
-    <ClInclude Include="Point.h">
-      <Filter>INT-POINT</Filter>
+      <Filter>INT</Filter>
     </ClInclude>
     <ClInclude Include="PubHunt.h">
       <Filter>PUBHUNT</Filter>

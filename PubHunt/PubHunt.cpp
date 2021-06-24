@@ -17,9 +17,7 @@
 
 #include "PubHunt.h"
 #include "IntGroup.h"
-#include "Point.h"
 #include "Timer.h"
-#include "HASH/ripemd160.h"
 #include <cstring>
 #include <cmath>
 #include <algorithm>

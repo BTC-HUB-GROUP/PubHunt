@@ -118,5 +118,6 @@ __device__ void ComputeHash(uint64_t* keys, uint32_t* hash160, int numHash160, u
 			}
 		}
 	}
+	__syncthreads();
 
 }

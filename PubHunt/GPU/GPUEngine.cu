@@ -22,8 +22,6 @@
 #include <device_launch_parameters.h>
 
 #include <stdint.h>
-#include "../hash/sha256.h"
-#include "../hash/ripemd160.h"
 #include "../Timer.h"
 
 #include "GPUMath.h"

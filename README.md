@@ -44,7 +44,7 @@ NUM HASH160  : 1
 OUTPUT FILE  : Found.txt
 GPU          : GPU #0 GeForce GTX 1650 (14x64 cores) Grid(4096x1024)
 
-[00:19:21] [GPU: 419.68 MH/s] [T: 469,803,991,040 (39 bit)] [F: 0]
+[00:02:12] [GPU: 506.74 MH/s] [T: 63,426,265,088 (36 bit)] [F: 0]
 ```
 
 ## Building

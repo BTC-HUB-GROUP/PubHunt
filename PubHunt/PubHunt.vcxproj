@@ -19,7 +19,6 @@
     <ClCompile Include="IntGroup.cpp" />
     <ClCompile Include="IntMod.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Point.cpp" />
     <ClCompile Include="PubHunt.cpp" />
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="Timer.cpp" />
@@ -34,7 +33,6 @@
     <ClInclude Include="HASH\sha256.h" />
     <ClInclude Include="Int.h" />
     <ClInclude Include="IntGroup.h" />
-    <ClInclude Include="Point.h" />
     <ClInclude Include="PubHunt.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="Timer.h" />
