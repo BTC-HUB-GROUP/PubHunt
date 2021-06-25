@@ -103,7 +103,7 @@ inline void __cudaSafeCall(cudaError err, const char* file, const int line)
 __global__ void compute_hash(uint64_t* keys, uint32_t* hash160, int numHash160, uint32_t maxFound, uint32_t* found)
 {
 
-	int id = (blockIdx.x * blockDim.x + threadIdx.x) * 8;
+	int id = (blockIdx.x * blockDim.x + threadIdx.x) * 4;
 	ComputeHash(keys + id, hash160, numHash160, maxFound, found);
 
 }
@@ -206,7 +206,7 @@ GPUEngine::GPUEngine(int nbThreadGroup, int nbThreadPerGroup, int gpuId, uint32_
 	CudaSafeCall(cudaDeviceSetLimit(cudaLimitStackSize, stackSize));
 
 	// Allocate memory
-	CudaSafeCall(cudaMalloc((void**)&inputKey, nbThread * 8 * sizeof(uint64_t)));
+	CudaSafeCall(cudaMalloc((void**)&inputKey, nbThread * 4 * sizeof(uint64_t)));
 
 	CudaSafeCall(cudaMalloc((void**)&outputBuffer, outputSize));
 	CudaSafeCall(cudaHostAlloc(&outputBufferPinned, outputSize, cudaHostAllocWriteCombined | cudaHostAllocMapped));
@@ -373,7 +373,7 @@ bool GPUEngine::Step(std::vector<ITEM>& dataFound, bool spinWait)
 
 bool GPUEngine::Randomize()
 {
-	CudaRandSafeCall(curandGenerateLongLong(prngGPU, (unsigned long long *)inputKey, nbThread * 8));
+	CudaRandSafeCall(curandGenerateLongLong(prngGPU, (unsigned long long*)inputKey, nbThread * 4));
 	CudaSafeCall(cudaStreamSynchronize(stream));
 
 	return true;
