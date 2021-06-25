@@ -373,7 +373,7 @@ bool GPUEngine::Step(std::vector<ITEM>& dataFound, bool spinWait)
 
 bool GPUEngine::Randomize()
 {
-	CudaRandSafeCall(curandGenerateLongLong(prngGPU, (uint64_t*)inputKey, nbThread * 8));
+	CudaRandSafeCall(curandGenerateLongLong(prngGPU, (unsigned long long *)inputKey, nbThread * 8));
 	CudaSafeCall(cudaStreamSynchronize(stream));
 
 	return true;
